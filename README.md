@@ -2,7 +2,7 @@
 
 ## 模型
 
-没有模型，每个`SocketClient`直接创建一个线程阻塞调用`recv`。
+阻塞，每个`SocketClient`直接创建一个线程阻塞调用`recv`。
 
 相关消息通知存入队列，由`update`时发送到`Lua`。
 
